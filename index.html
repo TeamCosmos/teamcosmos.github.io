@@ -9,6 +9,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>Purechild.GitHub.io</title>
+    
+    <script language="JavaScript" type="text/javascript">
+function layer_toggle(obj) {
+        if (obj.style.display==&#39;none') obj.style.display = 'block';
+        else if (obj.style.display==&#39;block') obj.style.display = 'none';
+}
+</script>
   </head>
 
   <body>
@@ -28,55 +35,19 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-          <div>
-    <ul>
-        <li class="menu">
-            <a><img src="" alt="상위메뉴이미지1"/></a>
-            <ul class="hide">
-                <li>"메뉴1-1"</li>
-                <li>"메뉴1-2"</li>
-                <li>"메뉴1-3"</li>
-                <li>메뉴1-4</li>
-                <li>메뉴1-5</li>
-                <li>메뉴1-6</li>
-            </ul>
-        </li>
-  
-        <li class="menu">
-            <a><img src="" alt="상위메뉴이미지2"/></a>
-            <ul class="hide">
-                <li>메뉴2-1</li>
-                <li>메뉴2-2</li>
-                <li>메뉴2-3</li>
-                <li>메뉴2-4</li>
-                <li>메뉴2-5</li>
-                <li>메뉴2-6</li>
-            </ul>
-        </li>
-    </ul>
-</div>
-<style>
-    .menu a{cursor:pointer;}
-    .menu .hide{display:none;}
-</style>
-
-<p><script>
-    // html dom 이 다 로딩된 후 실행된다.
-    $(document).ready(function(){
-        // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
-        $(".menu>a").click(function(){
-            var submenu = $(this).next("ul");
+<div style="display: block" id="more01a">
+<a onclick="layer_toggle(document.getElementById('more01a')); layer_toggle(document.getElementById('more01b')); return false;" href="#">
+<p>글 펼치기</p>
+</a></div>
  
-            // submenu 가 화면상에 보일때는 위로 보드랍게 접고 아니면 아래로 보드랍게 펼치기
-            if( submenu.is(":visible") ){
-                submenu.slideUp();
-            }else{
-                submenu.slideDown();
-            }
-        });
-    });
-</script>
+<div style="display: none" id="more01b">
+<a onclick="layer_toggle(document.getElementById('more01a')); layer_toggle(document.getElementById('more01b')); return false;" href="#">
+<p>글 접기</p>
+</a>
+<p>
+내용을 적습니다
 </p>
+</div>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
