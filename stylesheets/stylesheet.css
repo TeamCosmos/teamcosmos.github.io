@@ -51,7 +51,7 @@ Theme Styles
 body {
   box-sizing: border-box;
   color:#FFF1FF;
-  background: #FFF1FF;
+  background: #FFF1FF; ##여길 변경하니까 아래 색상 바뀜
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
