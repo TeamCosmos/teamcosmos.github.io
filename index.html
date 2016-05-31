@@ -6,9 +6,9 @@
     <style>
     .menu a{cursor:pointer;}
     .menu .hide{display:none;}
-</style>
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<p><script>
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <p><script>
     // html dom 이 다 로딩된 후 실행된다.
     $(document).ready(function(){
         // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
@@ -54,11 +54,13 @@
         <a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)"> 
          <h3><font color=#B2CCFF>대주제</font></h3>
         </a><div style="DISPLAY: none">
-         <a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)"> 
-          <h4>&nbsp&nbsp<font color=#B2CCFF>소주제1</font></h4>
-         </a><div style="DISPLAY: none">
-          &nbsp&nbsp&nbsp&nbsp<font color=#212121>내용<br><br></font>
-         </div><br>
+         <li class="menu">
+            <a><h4>&nbsp&nbsp<font color=#B2CCFF>소주제1</font></h4></a>
+            <ul class="hide">
+                <li><font color=#212121>내용</li>
+            </ul>
+        </li>
+        <br>
          
          <a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)"> 
           <h4>&nbsp&nbsp<font color=#B2CCFF>소주제2</font></h4>
