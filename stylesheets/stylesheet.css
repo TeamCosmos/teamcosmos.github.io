@@ -52,10 +52,6 @@ body {
   box-sizing: border-box;
   color:#FFF1FF;
   background: #24468A; ##여길 변경하니까 아래 색상 바뀜
-  background: -moz-linear-gradient(top, #24468A, #FFFFFF);
-  background: -webkit-linear-gradient(top, #24468A, #FFFFFF);
-  background: -ms-linear-gradient(top, #24468A, #FFFFFF);
-  background: -o-linear-gradient(top, #24468A, #FFFFFF);
   background: linear-gradient(top, #24468A, #FFFFFF)
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
