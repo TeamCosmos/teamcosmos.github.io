@@ -2,6 +2,25 @@
 <html>
 
   <head>
+    <!-- test -->
+    <style type="text/css">
+p {display:none;}
+</style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(document).ready(function(){
+var count = 0;
+var clickbtn = document.getElementById('btn');
+  $("#btn").click(function(){
+    $("p").toggle(500);
+	count++;
+	if(count%2==0) clickbtn.value = 'show';
+	else clickbtn.value = 'hide';
+  });
+});
+</script>
+
+
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="제목 : ">
@@ -69,6 +88,21 @@
           &nbsp&nbsp&nbsp&nbsp<font color=#212121>내용<br><br></font>
          </div><br>
         </div><br><br><br>
+        
+        
+        
+        <!-- test -->
+        <p>test1</p>
+<p>test2</p>
+<p>test3</p>
+<p>test5</p>
+<p>test6</p>
+<p>test7</p>
+<p>test8</p>
+<p>test9</p>
+<input type="button" id="btn" value="show">
+
+
       </section>
     </div>
     
