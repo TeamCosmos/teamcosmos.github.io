@@ -299,6 +299,19 @@ Full-Width Styles
   padding: 50px 5px 30px 5px;
 }
 
+#bottom_wrap {
+  background: #B2CCFF;
+  background: -moz-linear-gradient(bottom, #B2CCFF, #FFFFFF);
+  background: -webkit-linear-gradient(bottom, #B2CCFF, #FFFFFF);
+  background: -ms-linear-gradient(bottom, #B2CCFF, #FFFFFF);
+  background: -o-linear-gradient(bottom, #B2CCFF, #FFFFFF);
+  background: linear-gradient(bottom, #B2CCFF, #FFFFFF);
+}
+
+#bottom_wrap .inner {
+  padding: 50px 5px 30px 5px;
+}
+
 #project_title {
   margin: 0;
   color: #fff;
